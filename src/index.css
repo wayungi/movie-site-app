@@ -1,0 +1,15 @@
+html, body, .app {
+    background: #141414;
+    color:white;
+} 
+
+.movie-list > .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x:auto
+}
+
+div.movie {
+    border: 1px solid red;
+    width:fit-content;
+}

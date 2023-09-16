@@ -6,8 +6,8 @@ const MovieList = ({movies}) => {
     const movieList = movies.map((movie, index) => <Movie key={index} movie={movie}/>);
 
     return (
-        <section>
-            {movieList}
+        <section className="container-fluid movie-list">
+            <div className="row">{movieList}</div>
         </section>
 
     );
