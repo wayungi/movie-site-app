@@ -1,6 +1,6 @@
 import {useState} from 'react';
+import MovieList from './MovieList';
 import data from '../data.json';
-
 
 const Home = () => {
 
@@ -9,7 +9,7 @@ const Home = () => {
 
     return (
         <div>
-            Movies
+            {<MovieList movies={movies}/>}
         </div>
     )
 };

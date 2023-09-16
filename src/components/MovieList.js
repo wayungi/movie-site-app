@@ -1,4 +1,5 @@
-import Movie from './Movie'
+import Movie from './Movie';
+
 
 const MovieList = ({movies}) => {
 
