@@ -3,7 +3,9 @@ import Movie from './Movie';
 
 const MovieList = ({movies}) => {
 
-    const movieList = movies.map((movie, index) => <Movie key={index} movie={movie}/>);
+    console.log(typeof movies)
+
+    const movieList = movies?.map((movie, index) => <Movie key={index} movie={movie}/>);
 
     return (
         <section className="container-fluid movie-list">

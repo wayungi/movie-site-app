@@ -1,7 +1,10 @@
 const Movie = ({movie}) => {
     return (
-        <div className="movie pt-2 pb-2">
+        <div className="movie">
             <img src={movie.Poster} alt={movie.Title}/>
+            <div className="overlay">
+                Add to Favourites
+            </div>
         </div>
     );
 };
