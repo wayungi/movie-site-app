@@ -9,11 +9,18 @@ html, body, .app {
 }
 
 div.movie {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width:fit-content;
     max-width:200px; /*Ensures that no image will excess this height*/
     position:relative;
     padding:0;
+    margin: 20px 10px;
+    transition: transform 1s ease;
+}
+
+div.movie:hover {
+    transform: scale(1.1);
+
 }
 
 .movie img {
@@ -24,10 +31,16 @@ div.movie {
 }
 
 .overlay {
-    outline:1px solid yellow;
     position:absolute;
     bottom: 0;
     width:100%;
     text-align: center;
     padding:5px 0;
+    background-color: rgba(0, 0, 0, 0.699);
+    opacity:0;
+    cursor: pointer;
+}
+
+div.movie:hover .overlay {
+    opacity: 1;
 }
