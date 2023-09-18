@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="app">
       <Search setTitleSearch={setTitleSearch}/>
-      <Home movies={movies} favMovies={favMovies} addFavMovie={addFavMovie}/>
+      <Home movies={movies} favMovies={favMovies} addFavMovie={addFavMovie} removeFavMovie={removeFavMovie}/>
     </div>
   );
 }
