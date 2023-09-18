@@ -29,6 +29,11 @@ const App = () => {
     setFavMovies(favouriteMovies);
   }
 
+  const removeFavMovie = (imdbID) => {
+    const favMovieList = favMovies.filter((movie) => movie.imdbID = imdbID);
+    setFavMovies(favMovieList);
+  }
+
   return (
     <div className="app">
       <Search setTitleSearch={setTitleSearch}/>
