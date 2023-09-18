@@ -1,5 +1,6 @@
 import MovieList from './MovieList';
 import FavouriteButton from "./FavouriteButton";
+import  RemoveFavButton from "./RemoveFavButton";
 
 
 const Home = ({movies, favMovies, addFavMovie, removeFavMovie}) => {
@@ -12,7 +13,7 @@ const Home = ({movies, favMovies, addFavMovie, removeFavMovie}) => {
             <h2>Favourite Movies</h2>
 
             <div>
-                {<MovieList movies={favMovies} addFavMovie={removeFavMovie} FavouriteButton={FavouriteButton}/>}
+                {<MovieList movies={favMovies} addFavMovie={removeFavMovie} FavouriteButton={RemoveFavButton}/>}
             </div>
         </div>
         

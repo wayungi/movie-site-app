@@ -30,7 +30,7 @@ const App = () => {
   }
 
   const removeFavMovie = (imdbID) => {
-    const favMovieList = favMovies.filter((movie) => movie.imdbID = imdbID);
+    const favMovieList = favMovies.filter((movie) => movie.imdbID !== imdbID);
     setFavMovies(favMovieList);
   }
 
