@@ -25,6 +25,9 @@ const App = () => {
   }, [titleSearch]);
 
   const addFavMovie = (movie) => {
+
+    if (favMovies.includes(movie)) return
+
     const favouriteMovies = [...favMovies, movie];
     setFavMovies(favouriteMovies);
   }
