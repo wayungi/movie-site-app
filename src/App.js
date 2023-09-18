@@ -8,7 +8,7 @@ import Search from './components/Search';
 const App = () => {
 
   const [movies, setMovies] = useState([]);
-  const [titleSearch, setTitleSearch] = useState('avenger');
+  const [titleSearch, setTitleSearch] = useState([]);
   const [favMovies, setFavMovies] = useState([]);
 
   const searchMovie = async () => {
