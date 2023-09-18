@@ -1,10 +1,10 @@
 import FavouriteButton from "./FavouriteButton";
 
-const Movie = ({movie}) => {
+const Movie = ({movie, addFavMovie}) => {
     return (
         <div className="movie">
             <img src={movie.Poster} alt={movie.Title}/>
-            <FavouriteButton />
+            <FavouriteButton movie={movie} addFavMovie={addFavMovie}/>
         </div>
     );
 };

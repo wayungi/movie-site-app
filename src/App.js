@@ -24,10 +24,15 @@ const App = () => {
     const result = searchMovie();  
   }, [titleSearch]);
 
+  const addFavMovie = (movie) => {
+    const favouriteMovies = [...favMovies, movie];
+    setFavMovies(favouriteMovies);
+  }
+
   return (
     <div className="app">
       <Search setTitleSearch={setTitleSearch}/>
-      <Home movies={movies} favMovies={favMovies}/>
+      <Home movies={movies} favMovies={favMovies} addFavMovie={addFavMovie}/>
     </div>
   );
 }
