@@ -3,8 +3,6 @@ import Movie from './Movie';
 
 const MovieList = ({movies}) => {
 
-    console.log(typeof movies)
-
     const movieList = movies?.map((movie, index) => <Movie key={index} movie={movie}/>);
 
     return (

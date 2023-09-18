@@ -9,6 +9,7 @@ const App = () => {
 
   const [movies, setMovies] = useState([]);
   const [titleSearch, setTitleSearch] = useState('avenger');
+  const [favMovies, setFavMovies] = useState([]);
 
   const searchMovie = async () => {
     const URL =  `http://www.omdbapi.com/?s=${titleSearch}s&apikey=fa994858`;
@@ -26,7 +27,7 @@ const App = () => {
   return (
     <div className="app">
       <Search setTitleSearch={setTitleSearch}/>
-      <Home movies={movies}/>
+      <Home movies={movies} favMovies={favMovies}/>
     </div>
   );
 }
