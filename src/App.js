@@ -38,7 +38,7 @@ const App = () => {
   }
 
   const saveToLocalStorage = (favouriteMovies) => {
-    localStorage.setItem('react-app-favourite-movies', favouriteMovies);
+    localStorage.setItem('react-app-favourite-movies', JSON.stringify(favouriteMovies));
   };
 
   return (
