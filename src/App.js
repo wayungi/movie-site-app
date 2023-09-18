@@ -37,6 +37,10 @@ const App = () => {
     setFavMovies(favMovieList);
   }
 
+  const saveToLocalStorage = (favouriteMovies) => {
+    localStorage.setItem('react-app-favourite-movies', favouriteMovies);
+  };
+
   return (
     <div className="app">
       <Search setTitleSearch={setTitleSearch}/>
